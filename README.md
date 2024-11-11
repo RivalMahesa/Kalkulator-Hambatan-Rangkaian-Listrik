@@ -33,4 +33,4 @@ Instruksi untuk menginstal proyek ini secara lokal. Misalnya:
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/username/nama-proyek.git
+   git clone https://github.com/RivalMahesa/Kalkulator-Hambatan-Rangkaian-Listrik.git
