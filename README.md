@@ -16,7 +16,7 @@ Deskripsi singkat tentang proyek Anda, apa tujuannya, dan manfaat yang diharapka
 
 ## Fitur
 
-- Fitur 1
+- Menghitung jumlah hambatan pada rangkaian listrik
 - Fitur 2
 - Fitur 3
 
