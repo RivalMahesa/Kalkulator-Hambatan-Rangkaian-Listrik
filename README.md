@@ -16,7 +16,7 @@ Deskripsi singkat tentang proyek Anda, apa tujuannya, dan manfaat yang diharapka
 
 ## Fitur
 
-- Menghitung jumlah hambatan pada rangkaian listrik
+- Menghitung besar hambatan pada rangkaian listrik
 - Fitur 2
 - Fitur 3
 
@@ -24,7 +24,7 @@ Deskripsi singkat tentang proyek Anda, apa tujuannya, dan manfaat yang diharapka
 
 Berikut adalah prasyarat untuk menjalankan proyek ini:
 
-- [Nama Perangkat Lunak](https://link-download.com) - versi yang diperlukan
+- [Kalkulator Hambatan](https://link-download.com) - versi yang diperlukan
 - Sistem operasi atau bahasa pemrograman tertentu (misalnya, Python 3.8+)
 
 ## Instalasi
