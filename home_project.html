@@ -5,46 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        html{
+        body{
             background-color: gray;
         }
+
         nav{
+            padding: 0.1rem 2rem;
             background-color: black;
             display: flex;
+            justify-content: space-between;
         }
+        nav ul{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-family: 'Segoe UI',sans-serif;
+            color: gray;
+            font-weight: 500;
+            padding: 8px 0;
+            transition: all;
+            transition-duration: 200ms; 
+            border-bottom: 1px solid rgb(0, 0, 0);
+
+        }
+        nav ul li a:hover {
+            color: aqua;
+            border-bottom: 1px solid white;
+        }
+        nav img{
+            width: 120px;
+            
+        }
+
+        tr td a{
+            color: black;
+            list-style: none;
+            font-weight: 700;
+        }
+        tr td a:hover{
+            color: aqua;
+        }
+
         footer{
             background-color: rgb(52, 52, 54);
             display: flex;
+        }
+        footer h3{
+            gap: 1rem 2rem;
+        }
+        footer ul{
+            font-family: sans-serif;
+            font-weight: 500;
+            color:black;
+        }
+
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style:normal;
+            font-weight: bold;
         }
 
     </style>
 </head>
 <body>
     <nav>
+        <img src="Gambar/Logo.png" alt="Logo">
         <ul>
-            <li style="color: aliceblue;"><a href="home_project.html">home</a></li>
+            <li>
+                <a href="home_project.html">Home</a> 
+            </li>
+            <li>
+                <a href="#">About me</a>
+            </li>
+            <li>
+                <a href="#">contat us</a>
+            </li>
         </ul>
     </nav>
-    <h2 align="center">KALKULATOR HAMBATAN RANGKAIAN LISTRIK</h2>
+    <br><br><br>
+    <h1 align="center">KALKULATOR HAMBATAN RANGKAIAN LISTRIK</h1>
     <table align="center" cellspacing="100">
         <tr>
             <td align="center">
-                <img src="Seri/Seri.png" alt="Rangkaian Seri" width="500" height="auto"><!--Rangkaian Seri-->
+                <img src="Gambar/Seri.png" alt="Rangkaian Seri" width="500" height="auto"><!--Rangkaian Seri-->
                 <a href="kalkulator_project.html"><li style="font-size: large;">Rangkaian Seri</li></a>
             </td>
             <td align="center">
-                <img src="Paralel/Paralel.png" alt="Rangkaian Paralel" width="500" height="auto"><!--Rangkaian Paralel-->
-                <a href="kalkulator_project.html"><li style="font-size: large;">Rangkaian Paralel</li></a>
+                <img src="Gambar/Paralel.png" alt="Rangkaian Paralel" width="500" height="auto"><!--Rangkaian Paralel-->
+                <a href="kalkulator_pararel.html"><li style="font-size: large;">Rangkaian Paralel</li></a>
             </td>
             </td>
         </tr>
     </table>     
     <footer>
-        <h3>contat us :</h3>
+        <h3> contat us :</h3>
         <ul>
-            <p>085799874939</p>
-            <p>08xxxxxxxxxx</p>
-            <p>08xxxxxxxxxx</p>
+            <p>085799874939 (Rival)</p>
+            <p>081399715062 (Najmi)</p>
+            <p>089693780444 (Zahra)</p>
         </ul>
     </footer>      
 </body>
