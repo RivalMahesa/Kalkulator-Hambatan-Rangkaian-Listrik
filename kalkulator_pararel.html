@@ -26,25 +26,89 @@
     <head><h3>Kalkulator Hambatan Rangkaian Pararel</h3></head><hr>
     <br>
          
-        <label for="hambatan">banyak hambatan : </label>
-        <select id="hambatan" name="hambatan">
-            <option value="">Pilih</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-        </select><br>
-        <div id="inputContainer"></div>
+    <label for="hambatan">Banyaknya Hambatan: </label>
+    <select id="hambatan" name="hambatan">
+        <option value="">Pilih</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>
 
-        <p class="note">Pilih jenis hambatan lalu berikan nilai hambatannya (harus positif > 0) lalu tekan tombol <strong>HITUNG</strong></p>
+    <div id="inputContainer">
+        <!-- Input hambatan akan ditambahkan secara dinamis di sini -->
+    </div>
 
-         <button id="hitungBtn">HITUNG</button>
+    <p class="note">Pilih jenis hambatan lalu berikan nilai hambatannya (harus positif > 0) lalu tekan tombol <strong>HITUNG</strong></p>
 
-        <p id="output" class="output"></p>
+    <button id="hitungBtn">HITUNG</button>
 
+    <p id="output" class="output"></p>
+
+    <script>
+        const hambatanSelect = document.getElementById('hambatan');
+        const inputContainer = document.getElementById('inputContainer');
+        const hitungBtn = document.getElementById('hitungBtn');
+        const output = document.getElementById('output');
+
+        // Fungsi untuk memperbarui input berdasarkan banyaknya hambatan yang dipilih
+        hambatanSelect.addEventListener('change', () => {
+            const jumlah = parseInt(hambatanSelect.value);
+            inputContainer.innerHTML = ''; // Bersihkan kontainer input
+
+            if (jumlah > 0) {
+                for (let i = 1; i <= jumlah; i++) {
+                    // Tambahkan input untuk setiap hambatan
+                    const div = document.createElement('div');
+                    div.className = 'input-group';
+                    div.innerHTML = `
+                        <label for="hambatan${i}">#${i}</label>
+                        <input type="number" id="hambatan${i}" name="hambatan${i}" min="0" step="any" required>
+                    `;
+                    inputContainer.appendChild(div);
+                }
+            }
+        });
+
+        // Fungsi untuk menghitung hasil
+        hitungBtn.addEventListener('click', () => {
+            const jumlah = parseInt(hambatanSelect.value);
+            if (!jumlah || jumlah <= 0) {
+                output.textContent = 'Silakan pilih jumlah hambatan yang valid!';
+                output.style.color = 'red';
+                return;
+            }
+
+            let total = 0;
+            let totalhambatan = 0;
+            let valid = true;
+
+            for (let i = 1; i <= jumlah; i++) {
+                const input = document.getElementById(`hambatan${i}`);
+                const nilai = parseFloat(input.value);
+
+                if (!nilai || nilai <= 0) {
+                    valid = false;
+                    break;
+                }
+                total += 1/nilai;
+                totalhambatan = 1/total;
+                
+                  
+            }
+            
+            if (valid) {
+                output.textContent = `Total nilai hambatan: ${totalhambatan} Ω`;
+                output.style.color = 'blue';
+            } else {
+                output.textContent = 'Semua nilai hambatan harus diisi dan positif!';
+                output.style.color = 'red';
+            }
+        });
+    </script>
         
        
 
