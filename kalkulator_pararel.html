@@ -15,10 +15,10 @@
                 <a href="home_project.html">Home</a> 
             </li>
             <li>
-                <a href="#">About me</a>
+                <a href="#">About Me</a>
             </li>
             <li>
-                <a href="#">contat us</a>
+                <a href="#">Contat Us</a>
             </li>
         </ul>
     </nav>
@@ -27,7 +27,7 @@
     <br>
          
         <label for="hambatan">banyak hambatan : </label>
-        <select id="hambatan" name="hambatan"  >
+        <select id="hambatan" name="hambatan">
             <option value="">Pilih</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -37,10 +37,16 @@
             <option value="6">6</option>
             <option value="7">7</option>
         </select><br>
+        <div id="inputContainer"></div>
 
-       <p>*Nilai hambatannya harus positif (> 0) lalu klik "HITUNG" </p><br>
+        <p class="note">Pilih jenis hambatan lalu berikan nilai hambatannya (harus positif > 0) lalu tekan tombol <strong>HITUNG</strong></p>
 
-       <button>HITUNG</button><br><br><br>
+         <button id="hitungBtn">HITUNG</button>
+
+        <p id="output" class="output"></p>
+
+        
+       
 
        <img src="rangkaianparalel.png "  width="250" height="150" >
         <br>

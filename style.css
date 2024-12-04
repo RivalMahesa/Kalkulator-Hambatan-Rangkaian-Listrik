@@ -7,6 +7,7 @@ nav{
     background-color: black;
     display: flex;
     justify-content: space-between;
+ 
 }
 nav ul{
     display: flex;
@@ -30,10 +31,9 @@ nav ul li a:hover {
     border-bottom: 1px solid white;
 }
 nav img{
-    width: 120px;
+    max-width: 100px;
     
 }
-
 tr td a{
     color: black;
     list-style: none;

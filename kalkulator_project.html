@@ -16,35 +16,94 @@
                 <a href="home_project.html">Home</a> 
             </li>
             <li>
-                <a href="#">About me</a>
+                <a href="#">About Me</a>
             </li>
             <li>
-                <a href="#">contat us</a>
+                <a href="#">Contat Us</a>
             </li>
         </ul>
     </nav>
     <br><br><br>
     <head><h3>Kalkulator Hambatan Rangkaian Seri</h3></head><hr>
     <br>
-        
-        <label for="hambatan">Banyak hambatan : </label>
-        <select id="hambatan" name="hambatan"  >
-            <option value="">Pilih</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-        </select><br>
-        <script src="Seri.js">
 
-        </script>
-
-       <p>*Nilai hambatannya harus positif (> 0) lalu klik "HITUNG" </p><br>
-
-       <button>HITUNG</button> <br> <br><br>
+       <label for="hambatan">Banyaknya Hambatan: </label>
+       <select id="hambatan" name="hambatan">
+           <option value="">Pilih</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+       </select>
+   
+       <div id="inputContainer">
+           <!-- Input hambatan akan ditambahkan secara dinamis di sini -->
+       </div>
+   
+       <p class="note">Pilih jenis hambatan lalu berikan nilai hambatannya (harus positif > 0) lalu tekan tombol <strong>HITUNG</strong></p>
+   
+       <button id="hitungBtn">HITUNG</button>
+   
+       <p id="output" class="output"></p>
+   
+       <script>
+           const hambatanSelect = document.getElementById('hambatan');
+           const inputContainer = document.getElementById('inputContainer');
+           const hitungBtn = document.getElementById('hitungBtn');
+           const output = document.getElementById('output');
+   
+           // Fungsi untuk memperbarui input berdasarkan banyaknya hambatan yang dipilih
+           hambatanSelect.addEventListener('change', () => {
+               const jumlah = parseInt(hambatanSelect.value);
+               inputContainer.innerHTML = ''; // Bersihkan kontainer input
+   
+               if (jumlah > 0) {
+                   for (let i = 1; i <= jumlah; i++) {
+                       // Tambahkan input untuk setiap hambatan
+                       const div = document.createElement('div');
+                       div.className = 'input-group';
+                       div.innerHTML = `
+                           <label for="hambatan${i}">#${i}</label>
+                           <input type="number" id="hambatan${i}" name="hambatan${i}" min="0" step="any" required>
+                       `;
+                       inputContainer.appendChild(div);
+                   }
+               }
+           });
+   
+           // Fungsi untuk menghitung hasil
+           hitungBtn.addEventListener('click', () => {
+               const jumlah = parseInt(hambatanSelect.value);
+               if (!jumlah || jumlah <= 0) {
+                   output.textContent = 'Silakan pilih jumlah hambatan yang valid!';
+                   output.style.color = 'red';
+                   return;
+               }
+   
+               let total = 0;
+               let valid = true;
+   
+               for (let i = 1; i <= jumlah; i++) {
+                   const input = document.getElementById(`hambatan${i}`);
+                   const nilai = parseFloat(input.value);
+   
+                   if (!nilai || nilai <= 0) {
+                       valid = false;
+                       break;
+                   }
+                   total += nilai;
+               }
+   
+               if (valid) {
+                   output.textContent = `Total nilai hambatan: ${total} Ω`;
+                   output.style.color = 'blue';
+               } else {
+                   output.textContent = 'Semua nilai hambatan harus diisi dan positif!';
+                   output.style.color = 'red';
+               }
+           });
+       </script>
 
 
        <img src="lampu seri (1).png "  width="250" height="150" >
@@ -64,7 +123,7 @@
 
 
 <footer>
-    <h3> contat us :</h3>
+    <h3> Contat Us :</h3>
     <ul>
         <p>085799874939 (Rival)</p>
         <p>081399715062 (Najmi)</p>
