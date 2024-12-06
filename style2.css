@@ -34,28 +34,45 @@ nav img{
     
 }
 
-tr td a{
-    color: black;
-    list-style: none;
-    font-weight: 700;
+label{
+    color: white;
 }
-tr td a:hover{
-    color: rgba(109, 0, 235, 0.792);
+p{
+    color: white;
 }
 
 footer{
-    background-color: rgb(52, 52, 54);
+    background-color:rgb(36, 7, 85);
     display: flex;
+   
 }
 footer ul{
     font-family: sans-serif;
     font-weight: 500;
-    color:black;
+    color:  rgba(110, 4, 232, 0.637);
+}
+.contact li{
+    list-style: none;
+    padding: 5px;
+}
+h3{
+    padding: 0cm 3cm;
+    color:  rgba(110, 4, 232, 0.792);
 }
 
 h1{
     text-align: center;
-    color: #333;
+    color: rgba(109, 0, 235, 0.792);
+}
+h2{
+    color: rgba(109, 0, 235, 0.792);
+}
+.class{
+    background-color: rgb(90, 23, 198);
+    color: white;
+}
+.class p{
+    text-align: center;
 }
 
 .note{

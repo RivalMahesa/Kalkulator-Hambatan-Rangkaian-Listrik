@@ -42,10 +42,15 @@ body{
 }
 .tombol{
     background-color: rgb(164, 15, 172);
-    color: #ffffff;
+    color: white;
     margin-left: 110px;
     border-radius: 25px;
     padding: 15px;
+   
+}
+.tombol a{
+    color: white;
+    
 }
 
 
@@ -95,6 +100,7 @@ tr td a:hover{
 
 footer{
     background-color:rgb(36, 7, 85);
+    display: flex;
    
 }
 footer ul{
@@ -109,7 +115,7 @@ footer ul{
 h3{
     padding: 0cm 3cm;
     color:  rgba(110, 4, 232, 0.792);
-    border-bottom: 1px solid  rgba(110, 4, 232, 0.792);
+    
 }
 
 h1{
@@ -117,12 +123,17 @@ h1{
     font-optical-sizing: auto;
     font-style:normal;
     font-weight: bold;
+    color: rgba(109, 0, 235, 0.792);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 2cm;
+}
+.class{
+    background-color: rgb(90, 23, 198);
     color: white;
-    font-size: 100px;
-    padding: 0cm 3cm;
+}
+p{
+    text-align: center;
 }
 
-p{
-    padding: 0cm 3cm;
-    font-size: 30px;
-}
+
