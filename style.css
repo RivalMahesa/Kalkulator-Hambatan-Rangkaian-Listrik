@@ -1,12 +1,59 @@
 body{
-    background-color: gray;
+    background-image: url(Gambar/Background.png);
+    margin: 0;
+  
 }
+
+.top {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0cm 3cm;
+    color: whitesmoke;
+}
+
+.middle {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    padding: 0cm 3cm;
+}
+.middlee{
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(164, 15, 172);
+    padding: 0cm 3cm;
+}
+.middlee span{
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    
+}
+.bottom {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 3cm;
+    color: whitesmoke;
+}
+.bottom span{
+    color: rgb(164, 15, 172);
+}
+.tombol{
+    background-color: rgb(164, 15, 172);
+    color: #ffffff;
+    margin-left: 110px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
 
 nav{
     padding: 0.1rem 2rem;
-    background-color: black;
     display: flex;
     justify-content: space-between;
+    
  
 }
 nav ul{
@@ -18,7 +65,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     font-family: 'Segoe UI',sans-serif;
-    color: gray;
+    color: white;
     font-weight: 500;
     padding: 8px 0;
     transition: all;
@@ -27,30 +74,42 @@ nav ul li a{
 
 }
 nav ul li a:hover {
-    color: aqua;
-    border-bottom: 1px solid white;
+    color: rgba(109, 0, 235, 0.792);
+    border-bottom: 1px solid rgba(109, 0, 235, 0.792);
 }
 nav img{
     max-width: 100px;
     
 }
 tr td a{
-    color: black;
+    color: white;
     list-style: none;
     font-weight: 700;
 }
 tr td a:hover{
-    color: aqua;
+    color: rgba(109, 0, 235, 0.792);
+}
+.image{
+    border: 2px solid white;
 }
 
 footer{
-    background-color: rgb(52, 52, 54);
-    display: flex;
+    background-color:rgb(36, 7, 85);
+   
 }
 footer ul{
     font-family: sans-serif;
     font-weight: 500;
-    color:black;
+    color:  rgba(110, 4, 232, 0.637);
+}
+.contact li{
+    list-style: none;
+    padding: 5px;
+}
+h3{
+    padding: 0cm 3cm;
+    color:  rgba(110, 4, 232, 0.792);
+    border-bottom: 1px solid  rgba(110, 4, 232, 0.792);
 }
 
 h1{
@@ -58,4 +117,12 @@ h1{
     font-optical-sizing: auto;
     font-style:normal;
     font-weight: bold;
+    color: white;
+    font-size: 100px;
+    padding: 0cm 3cm;
+}
+
+p{
+    padding: 0cm 3cm;
+    font-size: 30px;
 }
