@@ -10,6 +10,7 @@ body{
     font-weight: 300;
     padding: 0cm 3cm;
     color: whitesmoke;
+
 }
 
 .middle {
@@ -51,6 +52,22 @@ body{
 .tombol a{
     color: white;
     
+}
+.gambar{
+  
+    padding-left: 22cm;
+    padding-bottom: 5cm;
+    margin: 0;
+    display: flex;
+   position: absolute;
+}
+.gambar img{
+    width: 550px;
+    height: auto;
+    padding-bottom: 5cm;
+    position: absolute;
+    top: -8.9cm;
+
 }
 
 
@@ -128,12 +145,16 @@ h1{
     text-align: center;
     padding-top: 2cm;
 }
-.class{
-    background-color: rgb(90, 23, 198);
-    color: white;
-}
-p{
-    text-align: center;
-}
 
+
+.warna{
+    background-color: rgb(96, 35, 194);
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height: 1cm;
+}
 
