@@ -1,8 +1,14 @@
+body{
+    background-image: url(Gambar/Background.png);
+    margin: 0;
+  
+}
 nav{
     padding: 0.1rem 2rem;
-    background-color: black;
     display: flex;
     justify-content: space-between;
+    
+ 
 }
 nav ul{
     display: flex;
@@ -13,22 +19,70 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     font-family: 'Segoe UI',sans-serif;
-    color: gray;
+    color: white;
     font-weight: 500;
     padding: 8px 0;
     transition: all;
     transition-duration: 200ms; 
     border-bottom: 1px solid rgb(0, 0, 0);
+
 }
-nav ul li a:hover{
-    color: aqua;
-    border-bottom: 1px solid white;
+nav ul li a:hover {
+    color: rgba(109, 0, 235, 0.792);
+    border-bottom: 1px solid rgba(109, 0, 235, 0.792);
 }
 nav img{
-    width: 120px;
+    max-width: 100px;
     
 }
+
+
+
+footer{
+    background-color:rgb(36, 7, 85);
+    display: flex;
+   
+}
+footer ul{
+    font-family: sans-serif;
+    font-weight: 500;
+    color:  rgba(110, 4, 232, 0.637);
+}
+.contact li{
+    list-style: none;
+    padding: 5px;
+    align-items: center;
+}
+.warna{
+    background-color: rgb(96, 35, 194);
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height: 1cm;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+    margin: 0;
+}
+
+.team{
+    text-align: center;
+    margin: 0;
+}
+
 h1{
     text-align: center;
-    color: #333;
+    color: rgba(109, 0, 235, 0.792);
+    font-size: 50px;
+    border: 1px solid white;
+    border-radius: 1cm;
 }
+

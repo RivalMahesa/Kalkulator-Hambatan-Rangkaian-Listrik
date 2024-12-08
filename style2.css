@@ -1,5 +1,6 @@
 body{
     background-image: url(Gambar/Background.png);
+    margin: 0;
 }
 
 nav{
@@ -34,11 +35,18 @@ nav img{
     
 }
 
+.kalkulator{
+    border: 2px solid white;
+    
+    
+}
+
 label{
     color: white;
 }
 p{
     color: white;
+    text-align: justify;
 }
 
 footer{
@@ -55,6 +63,17 @@ footer ul{
     list-style: none;
     padding: 5px;
 }
+.warna{
+    background-color: rgb(96, 35, 194);
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height: 1cm;
+}
+
 h3{
     padding: 0cm 3cm;
     color:  rgba(110, 4, 232, 0.792);

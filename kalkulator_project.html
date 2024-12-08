@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <title>Kalkulator Rangkaian Listrik </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="Gambar/Logo.png" type="image/png">
+    <title>Series Circuit | CaclRes</title>
 </head>
 <body>
     <nav>
@@ -19,13 +21,14 @@
                 <a href="about.html">About Us</a>
             </li>
             <li>
-                <a href="#">Contat Us</a>
+                <a href="#kontak">Contat Us</a>
             </li>
         </ul>
     </nav>
     <br><br><br>
     <head><h1>Kalkulator Hambatan Rangkaian Seri</h1></head><hr>
     <br>
+    <div class="kalkulator">
        <label for="hambatan">Banyaknya Hambatan: </label>
        <select id="hambatan" name="hambatan">
            <option value="">Pilih</option>
@@ -50,6 +53,7 @@
        <button id="hitungBtn">HITUNG</button>
    
        <p id="output" class="output"></p>
+    </div>
    
        <script>
            const hambatanSelect = document.getElementById('hambatan');
@@ -110,7 +114,7 @@
        </script>
 
 
-       <img src="lampu seri (1).png "  width="250" height="150" >
+       <img src="Gambar/Seri.png"  width="250" height="auto" >
     
     <br>
 
@@ -126,17 +130,17 @@
             <p><i>Rtot = R1 + R2 + .... Rn</i></p>
 
 
-<footer>
-    <h3> Contact Us :</h3>
-    <ul>
-        <div class="contact">
+    <footer>
+        <ul id="kontak">
+            <div class="contact">
+            <h3>Contact Us</h3>
             <li><i class="fas fa-phone"></i> Rival : 085799874939</li>
             <li><i class="fas fa-phone"></i> Najmi : 081399715062</li>
             <li><i class="fas fa-phone"></i> Zahra : 089693780444</li>
         </div>
-    </ul>
-</footer>
-<div class="copyright"><p>@2024 by CalcRes</p></div>    
+        </ul>
+    </footer>    
+    <div class="copyright"><p class="warna">@2024 by CalcRes</p></div> 
             
        
 

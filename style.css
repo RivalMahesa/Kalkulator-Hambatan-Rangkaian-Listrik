@@ -71,6 +71,7 @@ body{
 }
 
 
+
 nav{
     padding: 0.1rem 2rem;
     display: flex;
@@ -103,6 +104,7 @@ nav img{
     max-width: 100px;
     
 }
+
 tr td a{
     color: white;
     list-style: none;
@@ -143,7 +145,8 @@ h1{
     color: rgba(109, 0, 235, 0.792);
     font-size: 50px;
     text-align: center;
-    padding-top: 2cm;
+    border: 1px solid white;
+    border-radius: 1cm;
 }
 
 
