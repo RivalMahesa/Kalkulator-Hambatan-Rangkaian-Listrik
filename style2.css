@@ -57,7 +57,7 @@ footer{
 footer ul{
     font-family: sans-serif;
     font-weight: 500;
-    color:  rgba(110, 4, 232, 0.637);
+    color: white;
 }
 .contact li{
     list-style: none;
@@ -76,7 +76,7 @@ footer ul{
 
 h3{
     padding: 0cm 3cm;
-    color:  rgba(110, 4, 232, 0.792);
+    color:  white;
 }
 
 h1{
@@ -84,7 +84,7 @@ h1{
     color: rgba(109, 0, 235, 0.792);
 }
 h2{
-    color: rgba(109, 0, 235, 0.792);
+    color: rgb(186, 47, 255);
 }
 .class{
     background-color: rgb(90, 23, 198);
@@ -95,7 +95,7 @@ h2{
 }
 
 .note{
-    color: blue;
+    color: rgb(186, 47, 255);
 }
 
 h1{
@@ -104,4 +104,5 @@ h1{
     font-size: 50px;
     border: 1px solid white;
     border-radius: 1cm;
+    background-color: white;
 }
